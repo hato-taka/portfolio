@@ -29,8 +29,51 @@ section{
 }
 
 /* temporary */
-img{
-  width: 30px;
+// img{
+//   width: 30px;
+// }
+
+/* header */
+header{
+  margin-top: 90px;
+  .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #header-title{
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      img{
+        width: 30px;
+      }
+    }
+
+    .sns{
+      ul{
+        display: flex;
+
+        li{
+          img{
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+  .nav nav{
+    width: 370px;
+    margin-left: auto;
+    ul{
+      display: flex;
+      // justify-content: right;
+      li{
+        padding-left: 50px;
+      }
+    }
+  }
 }
 
 /* mainvisual */
@@ -43,7 +86,16 @@ img{
 }
 
 /* service */
+@mixin sec-title {
+  text-align: center;
+    font-size: 50px;
+    color: #707070;
+}
+
 #service {
+  .sec-title{
+    @include sec-title;
+  }
   .wrapper{
     display: flex;
     justify-content: space-between;
@@ -51,12 +103,24 @@ img{
   }
   .content{
     padding: 0 25px;
+    
+    .text-content{
+      text-align: center;
+    }
+
+    .sec-img{
+      width: 180px;
+      margin: 0 auto;
+    }
   }
 }
 
 
 /* works */
 #works {
+  .sec-title{
+    @include sec-title;
+  }
   .grid ul{
     display: grid;
     grid-template-rows: 270px 270px 270px;
