@@ -78,6 +78,7 @@ header {
   color: #707070; }
 #works .grid ul {
   display: grid;
+  justify-content: center;
   grid-template-rows: 270px 270px 270px;
   grid-template-columns: 270px 270px 270px; }
   #works .grid ul li {
